@@ -1,0 +1,50 @@
+:root{
+    --fondo: #BEC7C7;
+    --amarillo: #FFEB4D;
+    --negro: #121317;
+    --azul: #06111C;
+    --rojo: #BB2020;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+.encabezado{
+    margin: 2em;
+    text-align: center;
+    color: var(--rojo);
+}
+
+.grid-cols-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin: 2em;
+}
+
+.item{
+    padding: 2em;
+    background-color: var(--azul);
+    color: white;
+    text-align: center;
+}
+
+.item:hover{
+    cursor: pointer;
+}
+
+.espacio-trabajo{
+    margin: 2em;
+    padding: 2em;
+    background-color: var(--negro);
+    color: white;
+    border: darkgray solid 5px;
+    border-radius: 2rem;
+}

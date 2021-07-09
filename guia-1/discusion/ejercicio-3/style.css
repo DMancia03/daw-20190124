@@ -1,0 +1,44 @@
+:root{
+    --fondo: #BEC7C7;
+    --amarillo: #FFEB4D;
+    --negro: #121317;
+    --azul: #06111C;
+    --rojo: #BB2020;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+.encabezado{
+    margin: 2em;
+    text-align: center;
+    color: var(--rojo);
+}
+
+.espacio-trabajo{
+    margin: 2em;
+    padding: 2em;
+    background-color: var(--negro);
+    color: white;
+    border: darkgray solid 5px;
+    border-radius: 2rem;
+}
+
+.reset{
+    max-width: 100%;
+    display: block;
+    text-align: center;
+    margin: 2em;
+    color: var(--azul);
+}
+
+.reset:hover{
+    color: var(--rojo);
+}
