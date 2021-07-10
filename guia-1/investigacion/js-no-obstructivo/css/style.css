@@ -1,0 +1,80 @@
+:root{
+    --fondo: #BEC7C7;
+    --amarillo: #FFEB4D;
+    --negro: #121317;
+    --azul: #06111C;
+    --rojo: #BB2020;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+header{
+    background-color: var(--azul);
+    color: var(--rojo);
+    padding: 1em;
+    text-align: center;
+}
+
+.grid-cols-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-1{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.parrafo{
+    margin: 2em;
+    text-align: justify;
+}
+
+.zona-trabajo{
+    margin: 2em;
+    background-color: var(--amarillo);
+}
+
+.encabezado{
+    color: var(--rojo);
+    padding: 2em;
+    padding-bottom: 0;
+}
+
+.contenedor-btn{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    padding-top: 0%;
+}
+
+.boton-1{
+    background-color: var(--negro);
+    color: white;
+    display: block;
+    padding: 1em;
+    border-radius: 2rem;
+}
+
+.boton-1:hover{
+    cursor: pointer;
+    background-color: var(--azul);
+}
+
+@media (max-width: 900px) {
+    .grid-cols-2{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS no intrusivo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Javascript no intrusivo</h1>
+    </header>
+    <section class="grid-cols-2">
+        <div>
+            <div class="parrafo">
+                <p>Tenemos que el JavaScript no intrusivo es la práctica que consiste en 
+                    separar completamente la funcionalidad cliente (desarrollado ocupando 
+                    JS) del documento HTML; por lo que en el archivo HTML solo debería 
+                    estar la línea donde se vincula el documento al script JS externo.</p>
+            </div>
+            <div class="parrafo">
+                <p>Si recordamos cuando empezamos en el desarrollo web se nos enseñan que existen 
+                    diferentes formas de incluir JavaScript a nuestra página, siendo una de ellas 
+                    colocar código JS directamente en el documento HTML que da origen a nuestra 
+                    página web o haciéndolo desde un archivo externo conocido como script con 
+                    la extensión “.js”; es por esta última forma, la cual es la recomendada, 
+                    de donde surge la idea de JS no intrusivo pues de esta manera aseguramos 
+                    dar un orden a nuestro sitio web siguiendo un modelo de capas donde las 
+                    diferentes funcionalidades se integran individualmente y no todas en un 
+                    solo documento para poder editar más fácilmente cada parte por separado.</p>
+            </div>
+        </div>
+        <div>
+            <img src="img/img1.png" alt="Javascript no intrusivo" class="img-1">
+        </div>
+    </section>
+    <section>
+        <div class="parrafo">
+            <p>Además, de esta forma aseguramos que el contenido HTML de nuestra página 
+                web se despliegue correctamente en el navegador sin detenerlo o no mostrar 
+                nada si da errores JavaScript, por si el navegador no soporta el código JS.</p>
+        </div>
+        <div class="parrafo">
+            <p>Podemos pensar que solamente ocupando JS no intrusivo perdemos ciertas 
+                funciones en nuestra página web, lo cual es incorrecto ya que JavaScript 
+                no permite manipular el DOM con lo cual podemos asignar funciones e 
+                incluso modificar los atributos y contenidos de elementos HTML.</p>
+        </div>
+        <div class="parrafo">
+            <p>Para modificar el DOM podemos utilizar JavaScript vanilla o implementar 
+                librerías que nos ayuden en esta tarea como el conocido JQuery y behaviour.</p>
+        </div>
+    </section>
+    <section class="zona-trabajo">
+        <div class="encabezado">
+            <h2>Javascript no intrusivo</h2>
+        </div>
+        <div class="parrafo">
+            <p>Esta página web hace práctica del JavaScript no intrusivo, en el 
+                documento HTML no hay ninguna inserción de código JS y solo se 
+                vincula mediante una etiqueta script para poder realizar el 
+                siguiente ejemplo.</p>
+        </div>
+        <div id="espacio-saludo" class="parrafo">
+            <!-- JS -->
+        </div>
+        <div class="contenedor-btn">
+            <p id="btn1" class="boton-1">Presiona este botón para ver una funcionalidad cliente ocupando JS no intrusivo</p>
+        </div>
+    </section>
+    
+    <!-- Para regresar al inicio -->
+    <a href="../../../index.html" style="display: block;text-decoration: none;color: white;background-color: black;position: fixed;right: 0px; padding: 1em;border-radius: 2rem 0 0 2rem;bottom: 20%;"><- Inicio</a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

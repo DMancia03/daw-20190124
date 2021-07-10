@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de datos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Tipos de datos: NULL y UNDEFINED</h1>
+    </header>
+    <section>
+        <article class="grid-cols-2">
+            <div>
+                <div class="parrafo">
+                    <p>Es importante conocer estos dos conceptos para programar eficazmente 
+                        en JavaScript pues nos pueden aparecer en nuestro código y pueden ser 
+                        una gran ayuda o un error indeseado si no sabemos cómo tratarlos.</p>
+                </div>
+                <div class="parrafo">
+                    <p>Tenemos que los tipos de datos son <span>datos primarios</span> de JavaScript y que 
+                        simbolizan el vacío o ausencia de valor, pero en realidad poseen pequeñas 
+                        diferencias técnicas que no les permite ser iguales completamente.</p>
+                </div>
+                <div class="parrafo">
+                    <p>Pues <span>undefined</span> es una propiedad global que representa el valor de una 
+                        variable cuando no ha sido declarada o no se le ha asignado un valor.</p>
+                </div>
+            </div>
+            <div>
+                <img src="img/figura1.png" alt="Figura 1" class="img-1">
+            </div>
+        </article>
+        <article>
+            <div class="parrafo">
+                <p>Cuando declaramos una variable y no le damos un valor esta posee un valor 
+                    <span>undefined</span> por lo que podemos entenderlo como el valor por defecto en una 
+                    variable; también es el valor que tienen las variables que no se han declarado 
+                    pero las llamamos en el código, aunque esto no se puede ver pues nos da 
+                    un error de referencia.</p>
+            </div>
+            <div class="parrafo">
+                <p>Mientras que <span>null</span> es un valor que se le asigna a una variable intencionalmente 
+                    para decir que está vacía por diferentes motivos según lo requiera el código, 
+                    por ejemplo, necesitamos inicializar una variable pero no tenemos el valor que 
+                    le vamos a dar, entonces le asignamos <span>null</span> para que no lo trate como <span>undefined</span>.</p>
+            </div>
+            <div class="parrafo">
+                <p>Por consiguiente, tenemos que la diferencia principal es que <span>undefined</span> es 
+                    una propiedad que representa un valor por defecto y <span>null</span> un valor que se 
+                    le de da a una variable intencionalmente, por lo que representan vacío pero 
+                    no de la misma forma.</p>
+            </div>
+        </article>
+    </section>
+    <div>
+        <div class="nota">
+            <h2>Nota:</h2>
+            <p>Si queremos comparar estos tipos de datos, tenemos que si hacemos una 
+                comparación no estricta entre ellos, nos devuelve true. Mientras 
+                que en una comparación estricta, devuelve false.</p>
+            <img src="img/figura2.png" alt="Figura 2" class="img-2">
+        </div>
+        <div class="nota">
+            <h2>Nota:</h2>
+            <p>También cabe mencionar que se puede inicializar una variable con el 
+                tipo de datos <span>undefined</span>, pero no es recomendable y nos puede dar un 
+                error como al tratar de usar este tipo de dato en un JSON.</p>
+            <img src="img/figura3.png" alt="Figura 3" class="img-2">
+        </div>
+        <div class="nota">
+            <h2>Nota:</h2>
+            <p>Si ocupamos <span>null</span> en operaciones matemáticas, tendrá un valor de 
+                0 ya que representa el vacío.</p>
+            <img src="img/figura3.png" alt="Figura 3" class="img-2">
+        </div>
+    </div>
+    
+    <!-- Para regresar al inicio -->
+    <a href="../../../index.html" style="display: block;text-decoration: none;color: white;background-color: black;position: fixed;right: 0px; padding: 1em;border-radius: 2rem 0 0 2rem;bottom: 20%;"><- Inicio</a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
