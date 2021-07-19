@@ -1,0 +1,67 @@
+:root{
+    --fondo1: #D9C1B8;
+    --azulFuerte: #023E73;
+    --azulDebil: #1A5173;
+    --rojoFuerte: #D9483B;
+    --rojoDebil: #D97971;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--fondo1);
+}
+
+header{
+    background-color: var(--rojoFuerte);
+    color: var(--rojoDebil);
+    padding: 2em;
+    text-align: center;
+}
+
+section{
+    margin: 2em;
+}
+
+table{
+    width: 100%;
+    max-width: 100%;
+}
+
+table, tr, td, th{
+    border-collapse: collapse;
+}
+
+.t-encabezado{
+    background-color: var(--azulFuerte);
+}
+
+.t-cuerpo{
+    background-color: var(--azulDebil);
+}
+
+th, td{
+    padding: 2em;
+    text-align: center;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: var(--azulFuerte);
+    text-align: center;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    table, section{
+        overflow: scroll;
+    }
+}
