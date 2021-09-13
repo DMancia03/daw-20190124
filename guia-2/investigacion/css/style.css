@@ -1,0 +1,117 @@
+:root{
+    --fondo1: #D9C1B8;
+    --azulFuerte: #023E73;
+    --azulDebil: #1A5173;
+    --rojoFuerte: #D9483B;
+    --rojoDebil: #D97971;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--fondo1);
+}
+
+header{
+    background-color: var(--azulDebil);
+    color: white;
+    box-sizing: border-box;
+}
+
+.header-big{
+    height: 20em;
+    max-height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-small{
+    padding: 2em;
+}
+
+section{
+    position: relative;
+    box-sizing: border-box;
+}
+
+.encabezado{
+    color: var(--rojoFuerte);
+    text-align: center;
+    margin: 2em;
+}
+
+.cuerpo{
+    margin: 2em;
+    box-sizing: border-box;
+}
+
+.cuerpo h3{
+    text-align: center;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.cuerpo p{
+    text-align: justify;
+}
+
+.item{
+    border-radius: 2rem;
+    height: 100%;
+    max-height: 100%;
+}
+
+.contenido{
+    background-color: var(--azulFuerte);
+    padding: 2em;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.ejemplo{
+    background-color: white;
+    padding: 2em;
+    border-radius: 0 0 2rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.btn-1{
+    padding: 1em;
+    border-radius: 2em;
+    border: none;
+    background-color: var(--azulDebil);
+}
+
+.btn-1:hover{
+    cursor: pointer;
+    background-color: var(--azulFuerte);
+}
